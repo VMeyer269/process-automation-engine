@@ -1,6 +1,8 @@
 import csv
 from pathlib import Path
+
 from pao.domain.models import BillingRecord
+
 
 def read_billing_csv(path: Path) -> list[BillingRecord]:
     records: list[BillingRecord] = []
